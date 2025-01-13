@@ -1,0 +1,44 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body {
+    background-color: v.$body;
+    color: v.$primary;
+    font-family: v.$mainFont;
+    font-size: 1.6rem;
+}
+
+[class$="container"] {
+    max-width: 130rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+[class*="spacing"] {
+    padding: 5rem 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    all: unset;
+    cursor: pointer; 
+}
