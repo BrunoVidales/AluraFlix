@@ -62,3 +62,8 @@
     grid-template-columns: repeat($columns, 1fr);
 }
 
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
