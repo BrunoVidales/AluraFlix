@@ -2,6 +2,11 @@
 @use '../../../scss/base/mixins' as m;
 
 
+.background {
+    background-color: v.$body;
+    border-bottom: 3px solid #2271D1;
+    box-shadow: 5px 0 30px #2271D1;
+}
 
 .nav {
     padding: 3rem 0;
@@ -35,6 +40,7 @@
             height: 5rem;
             border: .2rem solid white;
             border-radius: 1rem;
+            transition: .3s;
             @include m.flex(center, center);
         }
     }
@@ -43,11 +49,10 @@
         color: #2271D1;
         @include m.tablet-1 { 
             border-color: #2271D1;
-            box-shadow: inset 0px 0px 10px rgb(34, 113, 209);
-            transition: box-shadow .3s;
-
+            box-shadow: inset 0px 0 10px #2271D1;
             &:hover {
-                box-shadow: none;
+                background-color: #2271D1;
+                color: v.$primary;
             }
         }
     }
@@ -55,5 +60,9 @@
     &__btn-desactive {
         border-color: v.$primary;
         color: v.$primary;
+        &:hover {
+            background-color: v.$primary;
+            color: #2271D1;
+        }
     }
 }

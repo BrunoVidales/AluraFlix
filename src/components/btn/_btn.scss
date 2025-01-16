@@ -1,0 +1,22 @@
+@use '../../scss/base/variables' as v;
+@use '../../scss/base/mixins' as m;
+
+.btn {
+    margin-top: 6rem;
+    display: flex;
+    gap: 3rem;
+
+    button {
+        text-transform: uppercase;
+        font-size: 2rem;
+        border: 3px solid white;
+        border-radius: 1.5rem; 
+        width: 18rem;
+        height: 5.4rem;
+        @include m.flex(center, center);
+
+        &:first-child {
+            border-color: #2271D1;
+        }
+    }
+}

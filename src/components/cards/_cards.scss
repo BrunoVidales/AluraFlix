@@ -1,0 +1,33 @@
+@use '../../scss/base/variables' as v;
+@use '../../scss/base/mixins' as m;
+
+
+.cards {
+    display: flex;
+    @include m.flex(center, center);
+    flex-wrap: wrap;
+    gap: 3rem;
+    @include m.tablet-2 { 
+        flex-wrap: nowrap;
+    }
+    &__card {
+        background-color: rgb(0, 0, 0);
+        border-radius: 1.5rem;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    &__btns {
+        padding: 1rem;
+        @include m.flex(space-evenly, center);
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+}

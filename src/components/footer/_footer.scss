@@ -1,0 +1,10 @@
+@use '../../scss/base/variables' as v;
+@use '../../scss/base/mixins' as m;
+
+.footer {
+    border-top: 3px solid #2271D1;
+    box-shadow: 5px 0 30px #2271D1;
+    @include m.flex(center, center);
+    flex-direction: column;
+    gap: 2rem;
+}

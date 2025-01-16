@@ -5,12 +5,12 @@ const Header = () => {
 
   const location = useLocation();
   const isNewVideoPage = location.pathname === '/nuevo-video';
+  const headerClass = isNewVideoPage ? 'header header__no-image' : 'header';
 
   return (
-    <header className="header">
+    <header className={headerClass}>
         <Nav isNewVideoPage={isNewVideoPage} />
-        {!isNewVideoPage && (
-          <div className="header__banner">
+        {!isNewVideoPage && (  
           <div className="header__flex container">
             <div className="header__info">
               <h1 className="header__heading">Front End</h1>
@@ -18,7 +18,6 @@ const Header = () => {
               <p className="header__text">Este challenge es una forma de aprendizaje. Es un mecanismo donde podrás comprometerte en la resolución de un problema para poder aplicar todos los conocimientos adquiridos en la formación React.</p>
             </div>
             <img className="header__img-player" src="/img/player.png" alt="Imagen persona" />
-          </div>
           </div>
         )}
     </header>

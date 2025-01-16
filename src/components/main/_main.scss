@@ -1,0 +1,26 @@
+@use '../../scss/base/variables' as v;
+@use '../../scss/base/mixins' as m;
+
+.main {
+
+    &__section {
+        margin-bottom: 9.3rem;
+        @include m.flex(center, center);
+        flex-direction: column;
+        gap: 4rem;
+        @include m.tablet-1 { 
+            @include m.flex(start, center);
+        }
+    }
+    &__title {
+        width: 40rem;
+        height: 7rem;
+        border-radius: 1.5rem;
+        @include m.flex(center, center);
+    }
+
+    &__card {
+        width: 43rem;
+        height: 30rem;
+    }
+}

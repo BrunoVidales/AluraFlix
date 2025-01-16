@@ -2,14 +2,15 @@
 @use '../../scss/base/mixins' as m;
 
 .header {
-    height: 90vh;
+    height: 100dvh;
     width: 100%;
-
-    &__banner {
-        background-image: url('../../../public/img/banner.png');
-        background-repeat: no-repeat;
-        background-size: cover ;
-        height: 100%;
+    background-image: url('../../../public/img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__no-image {
+        height: auto;
+        background-image: initial;
     }
 
     &__flex {

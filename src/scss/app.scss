@@ -1,3 +1,8 @@
 @use 'base' as base;
 @use '../components/Header/header';
 @use '../components/Header/Nav/nav';
+@use '../components/main/main';
+@use '../components/cards/cards';
+@use '../components/btn/btn';
+@use '../components/footer/footer';
+@use '../views/newVideo';
