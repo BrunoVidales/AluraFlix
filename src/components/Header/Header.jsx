@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import Nav from "./nav/Nav";
+import Nav from "../Nav/Nav";
 
 const Header = () => {
 
