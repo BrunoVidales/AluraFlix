@@ -58,7 +58,8 @@
 // Grid
 @mixin grid($columns, $gap) {
     display: grid;
-    gap: $gap;
+    column-gap: $gap;
+    row-gap: $gap;
     grid-template-columns: repeat($columns, 1fr);
 }
 

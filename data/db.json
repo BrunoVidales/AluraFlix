@@ -1,84 +1,100 @@
 {
-    "categories": [
-        {
-            "id": 1,
-            "title": "Front End",
-            "color": "#6BD1FF"
-        },
-        {
-            "id": 2,
-            "title": "Back End",
-            "color": "#00C86F"
-        },
-        {
-            "id": 3,
-            "title": "innovación y gestión",
-            "color": "#FFBA05"
-        }
-    ],
-    "cards": [
-        {
-            "id": 1,
-            "title": "Cuándo usar let, var y const?",
-            "image": "./img-cards/frontend1.png",
-            "video": "https://www.youtube.com/watch?v=PztCEdIJITY&t=74s",
-            "categoryId": 1
-        },
-        {
-            "id": 2,
-            "title": "Spring Framework",
-            "image": "./img-cards/backend1.png",
-            "video": "https://www.youtube.com/watch?v=t-iqt1b2qqk",
-            "categoryId": 2
-        },
-        {
-            "id": 3,
-            "title": "¿Qué son las Soft Skills?",
-            "image": "./img-cards/innovacion1.png",
-            "video": "https://www.youtube.com/watch?v=vhwspfvI52k",
-            "categoryId": 3
-        },
-        {
-            "id": 4,
-            "title": "7 Soft Skills más deseadas por las empresas",
-            "image": "./img-cards/innovacion2.png",
-            "video": "https://www.youtube.com/watch?v=YhR7Zp8NUzE",
-            "categoryId": 3
-        },
-        {
-            "id": 5,
-            "title": "¿Qué es SQL y NOSQL?",
-            "image": "./img-cards/backend2.png",
-            "video": "https://www.youtube.com/watch?v=cLLKVd5CNLc",
-            "categoryId": 2
-        },
-        {
-            "id": 6,
-            "title": "¿Qué es JavaScript?",
-            "image": "./img-cards/frontend2.png",
-            "video": "https://www.youtube.com/watch?v=GJfOSoaXk4s",
-            "categoryId": 1
-        },
-        {
-            "id": 7,
-            "title": "Equipo Front End",
-            "image": "./img-cards/frontend3.png",
-            "video": "https://www.youtube.com/watch?v=rpvrLaBQwgg",
-            "categoryId": 1
-        },
-        {
-            "id": 8,
-            "title": "Metodologías ágiles",
-            "image": "./img-cards/innovacion3.png",
-            "video": "https://www.youtube.com/watch?v=6N3OkLCfK-0",
-            "categoryId": 3
-        },
-        {
-            "id": 9,
-            "title": "Simplificando tu código en Java",
-            "image": "./img-cards/backend3.png",
-            "video": "https://www.youtube.com/watch?v=EoPvlE85XAQ",
-            "categoryId": 2
-        }
-    ]
+  "categories": [
+    {
+      "id": "1",
+      "title": "Front End",
+      "color": "#6BD1FF"
+    },
+    {
+      "id": "2",
+      "title": "Back End",
+      "color": "#00C86F"
+    },
+    {
+      "id": "3",
+      "title": "innovación y gestión",
+      "color": "#FFBA05"
+    }
+  ],
+  "cards": [
+    {
+      "id": "1",
+      "title": "Cuándo usar let, var y const?",
+      "image": "./img-cards/frontend1.png",
+      "video": "https://www.youtube.com/watch?v=PztCEdIJITY&t=74s",
+      "category": "Front End"
+    },
+    {
+      "id": "2",
+      "title": "Spring Framework",
+      "image": "./img-cards/backend1.png",
+      "video": "https://www.youtube.com/watch?v=t-iqt1b2qqk",
+      "category": "Back End"
+    },
+    {
+      "id": "3",
+      "title": "¿Qué son las Soft Skills?",
+      "image": "./img-cards/innovacion1.png",
+      "video": "https://www.youtube.com/watch?v=vhwspfvI52k",
+      "category": "innovación y gestión"
+    },
+    {
+      "id": "4",
+      "title": "7 Soft Skills más deseadas por las empresas",
+      "image": "./img-cards/innovacion2.png",
+      "video": "https://www.youtube.com/watch?v=YhR7Zp8NUzE",
+      "category": "innovación y gestión"
+    },
+    {
+      "id": "5",
+      "title": "¿Qué es SQL y NOSQL?",
+      "image": "./img-cards/backend2.png",
+      "video": "https://www.youtube.com/watch?v=cLLKVd5CNLc",
+      "category": "Back End"
+    },
+    {
+      "id": "6",
+      "title": "¿Qué es JavaScript?",
+      "image": "./img-cards/frontend2.png",
+      "video": "https://www.youtube.com/watch?v=GJfOSoaXk4s",
+      "category": "Front End"
+    },
+    {
+      "id": "7",
+      "title": "Equipo Front End",
+      "image": "./img-cards/frontend3.png",
+      "video": "https://www.youtube.com/watch?v=rpvrLaBQwgg",
+      "category": "Front End"
+    },
+    {
+      "id": "8",
+      "title": "Metodologías ágiles",
+      "image": "./img-cards/innovacion3.png",
+      "video": "https://www.youtube.com/watch?v=6N3OkLCfK-0",
+      "category": "innovación y gestión"
+    },
+    {
+      "id": "9",
+      "title": "Simplificando tu código en Java",
+      "image": "./img-cards/backend3.png",
+      "video": "https://www.youtube.com/watch?v=EoPvlE85XAQ",
+      "category": "Back End"
+    },
+    {
+      "id": "f494",
+      "title": "",
+      "category": "",
+      "image": "",
+      "video": "",
+      "description": ""
+    },
+    {
+      "id": "01e8",
+      "title": "",
+      "category": "",
+      "image": "",
+      "video": "",
+      "description": ""
+    }
+  ]
 }

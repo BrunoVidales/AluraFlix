@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { read } from '../../api/api'
+import { read, update } from '../../api/api'
 import Cards from '../cards/Cards';
 import NewVideo from '../../views/NewVideo';
 
@@ -23,6 +23,23 @@ const Main = () => {
     fetchData();
   }, []);
   
+  // Envios los recursos al servidor
+  const handleSubmit = async (e, url, setForm) => {
+    e.preventDefault();
+    try {
+      const newCard = await update(url);
+      
+      setForm({
+        title: '',
+        category: '',
+        image: '',
+        video: '',
+        description: ''
+      })
+    } catch (error) {
+      console.log('Hubo un error al crear la nueva card', error);
+    }
+  };
 
   return (
     <main className="main spacing container">
@@ -30,11 +47,11 @@ const Main = () => {
         sectionData.map(data => (
           <section key={data.id} className="main__section">
             <h2 style={{backgroundColor: data.color}} className="main__title">{data.title}</h2>
-            <Cards color={data.color} dataId={data.id} />
+            <Cards color={data.color} dataTitle={data.title} />
           </section>
         ))
       ) : (
-        <NewVideo categories={sectionData} />
+        <NewVideo handleSubmit={handleSubmit} categories={sectionData} />
       )}
     </main>
   );

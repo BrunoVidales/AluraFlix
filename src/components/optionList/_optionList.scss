@@ -1,0 +1,21 @@
+@use '../../scss/base/variables' as v;
+@use '../../scss/base/mixins' as m;
+
+.optionList { 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    select {
+        color: #535353;
+        padding: .5rem;
+        width: 100%;
+        height: 6rem;
+        background-color: transparent;
+        border: .1rem solid rgba(38, 38, 38, 1);
+        border-radius: 1.5rem;
+        &:focus-visible {
+            outline: none;
+            border: .1rem solid #164ECB;
+        }
+    }
+}
