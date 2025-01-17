@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { read, update } from '../../api/api'
+import { read, add } from '../../api/api'
 import Cards from '../cards/Cards';
 import NewVideo from '../../views/NewVideo';
 
@@ -27,7 +27,7 @@ const Main = () => {
   const handleSubmit = async (e, url, setForm) => {
     e.preventDefault();
     try {
-      const newCard = await update(url);
+      const newCard = await add(url);
       
       setForm({
         title: '',
@@ -47,7 +47,7 @@ const Main = () => {
         sectionData.map(data => (
           <section key={data.id} className="main__section">
             <h2 style={{backgroundColor: data.color}} className="main__title">{data.title}</h2>
-            <Cards color={data.color} dataTitle={data.title} />
+            <Cards color={data.color} dataTitle={data.title} categories={sectionData} />
           </section>
         ))
       ) : (

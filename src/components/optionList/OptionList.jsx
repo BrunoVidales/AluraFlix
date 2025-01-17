@@ -10,9 +10,14 @@ const OptionList = ({ categories, category, handleChange }) => {
             id="category" 
             name="category"
         >
-            <option disabled defaultValue="">Escoja una categoría</option>
-            {categories.map(cat => <option value={cat.title} key={cat.id}>{cat.title}</option>)}
-        </select>
+          <option disabled defaultValue="">Escoja una categoría</option>
+          {categories && categories.length > 0 ? (
+            categories.map(cat => <option value={cat.title} key={cat.id}>{cat.title}</option>)
+            ) : (
+            <option disabled>No hay categorías disponibles</option>
+          )}
+
+      </select>
     </div>
   );
 };

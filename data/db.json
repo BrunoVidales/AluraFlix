@@ -19,7 +19,7 @@
   "cards": [
     {
       "id": "1",
-      "title": "Cuándo usar let, var y const?",
+      "title": "¿Cuándo usar, LET, VAR Y CONST?",
       "image": "./img-cards/frontend1.png",
       "video": "https://www.youtube.com/watch?v=PztCEdIJITY&t=74s",
       "category": "Front End"
@@ -79,22 +79,6 @@
       "image": "./img-cards/backend3.png",
       "video": "https://www.youtube.com/watch?v=EoPvlE85XAQ",
       "category": "Back End"
-    },
-    {
-      "id": "f494",
-      "title": "",
-      "category": "",
-      "image": "",
-      "video": "",
-      "description": ""
-    },
-    {
-      "id": "01e8",
-      "title": "",
-      "category": "",
-      "image": "",
-      "video": "",
-      "description": ""
     }
   ]
 }

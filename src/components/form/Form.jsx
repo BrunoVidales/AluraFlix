@@ -21,12 +21,13 @@ const Form = ({ form, setForm, categories, handleSubmit  }) => {
           <div className="form__input">
             <label htmlFor="title">Título</label>
             <input
-              onChange={handleChange}
-              value={form.title} 
-              name="title" 
-              id="title" 
-              type="text" 
-              placeholder="título del video" 
+                onChange={handleChange}
+                value={form.title} 
+                name="title" 
+                id="title" 
+                type="text" 
+                placeholder="título del video" 
+                required
             />
           </div>
 
@@ -41,6 +42,7 @@ const Form = ({ form, setForm, categories, handleSubmit  }) => {
               id="image" 
               type="text" 
               placeholder="link de la imagen" 
+              required
             />
           </div>
 
@@ -53,18 +55,10 @@ const Form = ({ form, setForm, categories, handleSubmit  }) => {
               id="video" 
               type="text" 
               placeholder="link del video" 
+              required
             />
           </div>
 
-          <div className="form__input"> 
-            <label htmlFor="description">Descripción</label>
-            <textarea
-              onChange={handleChange} 
-              value={form.description} 
-              name="description" 
-              id="description">
-            </textarea>
-          </div>
         </div>
 
         <Btn setForm={setForm} />
