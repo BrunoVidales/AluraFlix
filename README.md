@@ -9,3 +9,9 @@
 - **Editar videos**: Modal con formulario para actualizar la información de un video.
 - **Eliminar videos**: Opción para eliminar videos existentes.
 
+## Iniciar el Servidor de Datos
+
+Para que la aplicación funcione correctamente, debes levantar un servidor local con **json-server**. Ejecuta el siguiente comando en tu terminal:
+
+```bash
+json-server --watch data/db.json --port 3000
